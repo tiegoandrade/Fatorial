@@ -24,8 +24,7 @@ public class fatorial {
 	// Caso seja inserido um número negativo é lançado uma exceção.
 	static int calcularFatorial(int num) throws NumeroNegativoException {
 		if (num < 0) {
-			throw new NumeroNegativoException ("Erro: Não é aceito um Valor negativo. "
-												+ "Tente novamente!");
+			throw new NumeroNegativoException ("Erro: Não é aceito um Valor negativo. Tente novamente!");
 		}
 		
 		if (num == 0){
