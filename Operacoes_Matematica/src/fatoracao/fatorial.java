@@ -7,8 +7,7 @@ public class fatorial {
 	public static void main(String[] args) {
 		
 		// Informa o número que será fatorado.
-		int valor = Integer.parseInt(JOptionPane.showInputDialog(null, 
-					"Digite o valor que será fatorado: "));
+		int valor = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite o valor que será fatorado: "));
 		
 		// Chamada do método que realizará a fatoração e atribuição em uma variável.
 		// Pega uma exceção caso o usuário informe um número negativo.
@@ -25,9 +24,7 @@ public class fatorial {
 	static int calcularFatorial(int num) throws NumeroNegativoException {
 		if (num < 0) {
 			throw new NumeroNegativoException ("Erro: Não é aceito um Valor negativo. Tente novamente!");
-		}
-		
-		if (num == 0){
+		} else if (num == 0) {
 			return 1;
 		}
 		
